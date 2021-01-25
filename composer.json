@@ -1,0 +1,57 @@
+{
+    "name": "adamgaskins/view-string",
+    "description": "A Laravel helper to compile blade views from strings.",
+    "keywords": [
+        "laravel", "view", "blade"
+    ],
+    "homepage": "https://github.com/adamgaskins/view-string",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Gaskins",
+            "email": "adam@gaskins.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdamGaskins\\ViewString\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AdamGaskins\\ViewString\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdamGaskins\\ViewString\\ViewStringServiceProvider"
+            ],
+            "aliases": {
+                "ViewString": "AdamGaskins\\ViewString\\ViewStringFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
