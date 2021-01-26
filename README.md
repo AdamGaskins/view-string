@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/AdamGaskins/barcoder" alt="Barcoder on Github"><img width="627" src="assets/screenshot.png" /></a></p>
+<p align="center"><a href="https://github.com/AdamGaskins/view-string" alt="view-string on Github"><img width="627" src="assets/screenshot.png" /></a></p>
 
 <p align="center">The <code>view()</code> helper's little brother; a function to compile blade views from strings.</p>
 
