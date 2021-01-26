@@ -1,6 +1,6 @@
 {
     "name": "adamgaskins/view-string",
-    "description": "A Laravel helper to compile blade views from strings.",
+    "description": "The view() helper's little brother; a function to compile blade views from strings.",
     "keywords": [
         "laravel", "view", "blade"
     ],

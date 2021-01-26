@@ -1,6 +1,6 @@
-<p align="center"><a href="https://github.com/AdamGaskins/barcoder" alt="Barcoder on Github"><img width="550px" src="assets/screenshot.png" /></a></p>
+<p align="center"><a href="https://github.com/AdamGaskins/barcoder" alt="Barcoder on Github"><img width="627" src="assets/screenshot.png" /></a></p>
 
-<p align="center">A Laravel helper function to compile blade views from strings.</p>
+<p align="center">The <code>view()</code> helper's little brother; a function to compile blade views from strings.</p>
 
 <p align="center">
     <a href="https://packagist.org/packages/adamgaskins/view-string" alt="Latest Version on Packagist"><img src="https://img.shields.io/packagist/v/adamgaskins/view-string.svg?style=flat-square"></a>
