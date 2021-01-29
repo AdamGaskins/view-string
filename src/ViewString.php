@@ -17,12 +17,20 @@ class ViewString
     {
         $data = $data instanceof Arrayable ? $data->toArray() : $data;
 
+        $data = array_merge(
+            $data,
+            [
+                '__env' => app()->make('view'),
+                'app' => app(),
+            ]
+        );
+
         $php = Blade::compileString($string);
 
         ob_start() and extract($data, EXTR_SKIP);
 
         try {
-            eval('?>'.$php);
+            eval('?>' . $php);
         } catch (\Exception $e) {
             ob_get_clean();
 
