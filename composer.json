@@ -43,13 +43,11 @@
         "sort-packages": true
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
         "laravel": {
-            "providers": [
-                "AdamGaskins\\ViewString\\ViewStringServiceProvider"
-            ],
-            "aliases": {
-                "ViewString": "AdamGaskins\\ViewString\\ViewStringFacade"
-            }
+            "aliases": {}
         }
     },
     "minimum-stability": "dev",
