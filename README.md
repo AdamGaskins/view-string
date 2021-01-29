@@ -35,6 +35,10 @@ This package uses eval behind the scenes. It is not sandboxed. The goal of this 
 ```bash
 composer test
 ```
+
+## Related
+- [`wpb/string-blade-compiler`](https://github.com/TerrePorter/StringBladeCompiler): A great package that I used for years, and inspired this package. A little bit more opinionated though, the fact that it completely replaces `Illuminate\View\View` leads to [issues](https://github.com/TerrePorter/StringBladeCompiler/issues/73) in some random edge cases.
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
