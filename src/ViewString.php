@@ -13,7 +13,7 @@ class ViewString
      * @param Arrayable|array $args
      * @return string The compiled output
      */
-    public static function compile(string $string, $data = [])
+    public static function compile(string $string, $data = [], $eval = true)
     {
         $data = $data instanceof Arrayable ? $data->toArray() : $data;
 
@@ -26,6 +26,10 @@ class ViewString
         );
 
         $php = Blade::compileString($string);
+
+        if (! $eval) {
+            return $php;
+        }
 
         ob_start() and extract($data, EXTR_SKIP);
 
