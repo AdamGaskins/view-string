@@ -44,10 +44,12 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         },
         "laravel": {
-            "aliases": {}
+            "providers": [
+                "AdamGaskins\\ViewString\\ViewStringServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

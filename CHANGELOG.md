@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.0
+> Released 02/08/2020
+
+- Added `@includeString` directive.
+
 ## v1.1.0
 > Released 01/28/2020
 

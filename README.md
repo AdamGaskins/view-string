@@ -25,10 +25,18 @@ $design = Design::find(1);
 view_string($design->content, [ 'blogPost' => $post ]);
 ```
 
-We use this package at my company to allow us to quickly write tiny snippets of custom elements for our customers, saving us the need to do a full site deploy every time a user requests a change.
+Or if you want to include it in your blade templates, there's a directive for that:
+
+```php
+@includeString($design->content [ 'blogPost' => $post ])
+```
+
+Use `view_string` where you'd use `view`, and `@includeString` where you'd use `@include`.
 
 ## eval
 This package uses eval behind the scenes. It is not sandboxed. The goal of this package is to allow developers to write small blade snippets without needing to deploy. I am not responsible for what happens if you let random strangers on the internet run code on your servers.
+
+We use this package at my company to allow us to quickly write tiny snippets of custom elements for our customers, saving us the need to do a full site deploy every time a user requests a change.
 
 ## Testing
 
