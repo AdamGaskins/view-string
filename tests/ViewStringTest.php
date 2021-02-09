@@ -3,6 +3,7 @@
 namespace AdamGaskins\ViewString\Tests;
 
 use AdamGaskins\ViewString\ViewString;
+use Illuminate\Support\Facades\Blade;
 
 class ViewStringTest extends TestCase
 {
@@ -27,6 +28,24 @@ class ViewStringTest extends TestCase
         $this->assertEquals(
             $expected,
             view_string($string, $data)
+        );
+    }
+
+    /** @test */
+    public function it_compiles_to_php()
+    {
+        $this->assertEquals(
+            'Hello <?php echo e($name); ?>',
+            ViewString::compile('Hello {{ $name }}', [ 'name' => 'World' ], false)
+        );
+    }
+
+    /** @test */
+    public function it_compiles_via_blade_directive()
+    {
+        $this->assertEquals(
+            'Hello <?php echo e($name); ?>',
+            Blade::compileString('@includeString("Hello @{{ \$name }}", [ "name" => "World" ])')
         );
     }
 
