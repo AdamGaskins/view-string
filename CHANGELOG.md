@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.3.0
+> Release 05/03/2022
+
+- Added Laravel 9 support
+
 ## v1.2.0
 > Released 02/08/2020
 
