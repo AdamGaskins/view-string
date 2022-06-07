@@ -1,3 +1,5 @@
+<b>Notice: This package is obsolete as of Laravel 9, which [includes this feature](https://laravel.com/docs/9.x/releases#rendering-inline-blade-templates) as part of the framework. `view-string` has been updated to work with Laravel 9, but migrating to use `Blade::render()` is extremely easy, so `view-string` will not be updated to keep up with future Laravel releases.</b>
+
 <p align="center"><a href="https://github.com/AdamGaskins/view-string" alt="view-string on Github"><img width="627" src="assets/screenshot.png" /></a></p>
 
 <p align="center">The <code>view()</code> helper's little brother; a function to compile blade views from strings.</p>
